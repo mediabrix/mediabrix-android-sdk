@@ -1,0 +1,23 @@
+package com.mediabrix.unityExample;
+
+import com.unity3d.player.UnityPlayerProxyActivity;
+
+public class MediabrixUnityPlayerProxyActivity extends UnityPlayerProxyActivity {
+	@Override
+	protected void onDestroy() {
+		MediabrixUnityAPI.onDestroy();
+		super.onDestroy();
+	}
+
+	@Override
+	protected void onPause() {
+		MediabrixUnityAPI.onPause();
+		super.onPause();
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		MediabrixUnityAPI.onResume();
+	}
+}
