@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.multiplatform">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_COMMAND_LINE_ARGUMENTS" value=""/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_PUBLISHER_ID" value=""/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_SECURITY_POLICY_FILE" value="security-policies/default.xml"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/Main.as"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_CLEAR_APP_DATA" value="true"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_DEPLOY_ON_DEVICE" value="true"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_DEVICE_DEBUG_METHOD" value="USB_DEBUGGING"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_IS_AUTO_LAUNCH" value="true"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_IS_SIMULATOR" value="true"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_IS_SIMULATOR_ENABLED" value="true"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_DEVICE_NAME" value="Apple iPhone 4"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_LAUNCH_HANDLER" value="com.adobe.flexide.multiplatform.ios.launching.IOSOnSimulatorLaunchHandler"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_PLATFORM" value="com.adobe.flexide.multiplatform.ios.platform"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOD_APP_ID:src/Main.as" value="com.mediabrix.air"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="test"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_QUICK_PACKAGING" value="false"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/amoselmaliah/dev/mediabrix/repo/internal/MediabrixAir/mediabrix-air-test/bin-debug/Main-app.xml"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_SELECTED_BUILD_TARGET" value=""/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_SIMULATOR_DEVICE" value="iPhone (Retina)"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_SIMULATOR_SDKLOCATION" value="/Applications/Xcode_5.0.2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_SIMULATOR_SDKVERSION" value="iPhoneSimulator7.0.sdk"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/test"/>
+<listEntry value="/test/src/Main.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+</launchConfiguration>
