@@ -1,0 +1,19 @@
+{
+	"group": "Frameworks",
+	"libs": ["libsqlite3.dylib", "libxml2.dylib"],
+	"frameworks": [ "Twitter.framework"
+				  , "MediaPlayer.framework"
+				  , "QuartzCore.framework"
+				  , "AVFoundation.framework"
+				  , "UIKit.framework"
+				  , "Foundation.framework"
+				  , "CoreGraphics.framework"
+				  , "CoreTelephony.framework"
+				  , "Social.framework"
+				  , "Accounts.framework"
+				  , "AdSupport.framework"],
+	"headerpaths": [],					
+	"files":   [],
+	"folders" : [],
+	"excludes" : []
+}
