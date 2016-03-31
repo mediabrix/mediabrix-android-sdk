@@ -7,20 +7,15 @@ using System.ComponentModel;
 using MediabrixPlatformPlugin = MediabrixPluginAndroid;
 #elif UNITY_IPHONE
 using MediabrixPlatformPlugin = MediabrixPluginIOS;
-#elif UNITY_WP8
-using MediabrixPlatformPlugin = MediabrixPluginWP8;
-#elif UNITY_METRO
-using MediabrixPlatformPlugin = MediabrixPluginWin81;
 #endif
 
 public interface MediaBrixAdEvents {
-
     void OnStarted(string statusText);
     void OnAdRewardConfirmation(string zone);
     void OnAdUnavailable(string zone);
     void OnAdClosed(string zone);
     void OnAdReady(string zone);
-
+	void OnAdShown (string zone);
 }
 
 public class MediabrixPlugin : MonoBehaviour {
