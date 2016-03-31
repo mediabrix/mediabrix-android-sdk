@@ -273,6 +273,11 @@ public class MainActivity extends Activity implements IAdEventsListener {
 			rewardsRewarded = true;
 		}
 	}
+    
+    @Override
+    public void onAdShown(String target) {
+        Log.d("adShownTarget", target);
+    }
 
 	@Override
 	public void onAdClosed(String target) {
