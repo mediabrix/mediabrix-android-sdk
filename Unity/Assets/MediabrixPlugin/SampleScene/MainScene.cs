@@ -8,26 +8,26 @@ public class MainScene : MonoBehaviour , MediaBrixAdEvents
 {
 	//This is the current staging mobile manifest
 	
-    
-	public static string serverURL = "http://staging-mobile-manifest.mediabrix.com/v2/manifest/";
+	public static string serverURL = "http://mobile.mediabrix.com/v2/manifest/";
+//	public static string serverURL = "http://staging-mobile-manifest.mediabrix.com/v2/manifest/";
 
 #if UNITY_METRO
     public static string appID = "bX6gANb9jt"; //"Rewu8ptiGf";//"k4L77F6VrC"; // use for PROD and MBQA
 #else
-	public static string appID = "k4L77F6VrC"; //"Rewu8ptiGf";//"k4L77F6VrC"; // use for PROD and MBQA
+	public static string appID = "TwwvxoFnJn"; //"Rewu8ptiGf";//"k4L77F6VrC"; // use for PROD and MBQA
 #endif
 
- public static string BUILD_DATE="v1.8.0.004";
+ public static string BUILD_DATE="v1.8.0.027";
 
 #if UNITY_IOS
-	const string ViewsIdentifier = "QA_Android_Views";
-	const string FlexIdentifier = "QA_Android_Flex";
-	const string RewardsIdentifier = "QA_Android_Rewards";
+	const string ViewsIdentifier = "mig_rally";
+	const string FlexIdentifier = "mig_rescue";
+	const string RewardsIdentifier = "mig_reward";
 
 #elif UNITY_ANDROID
-	const string ViewsIdentifier = "QA_Android_Views";
-	const string FlexIdentifier = "QA_Android_Flex";
-	const string RewardsIdentifier = "QA_Android_Rewards";
+	const string ViewsIdentifier = "mig_rally";
+	const string FlexIdentifier = "mig_rescue";
+	const string RewardsIdentifier = "mig_reward";
 #elif UNITY_WP8
     const string ViewsIdentifier = "QA_Window_Phone_Views";
     const string FlexIdentifier = "QA_Window_Phone_Flex";
@@ -38,17 +38,17 @@ public class MainScene : MonoBehaviour , MediaBrixAdEvents
     const string RewardsIdentifier = "QA_Windows_Rewards";
 #endif
 
-    const string LoadViewsTitle = "Load Views Ad";
-	const string LoadingViewsTitle = "Loading Views Ad";
-	const string ShowViewsTitle = "Show Views Ad";
+	const string LoadViewsTitle = "Load mig_rally";
+	const string LoadingViewsTitle = "Loading mig_rally";
+	const string ShowViewsTitle = "Show mig_rally";
 	
-	const string LoadFlexTitle = "Load Flex Ad";
-	const string LoadingFlexTitle = "Loading Flex Ad";
-	const string ShowFlexTitle = "Show Flex Ad";
+	const string LoadFlexTitle = "Load mig_rescue";
+	const string LoadingFlexTitle = "Loading mig_rescue";
+	const string ShowFlexTitle = "Show mig_rescue";
 	
-	const string LoadRewardsTitle = "Load Rewards Ad";
-	const string LoadingRewardsTitle = "Loading Rewards Ad";
-	const string ShowRewardsTitle = "Show Rewards Ad";
+	const string LoadRewardsTitle = "Load mig_reward";
+	const string LoadingRewardsTitle = "Loading mig_reward";
+	const string ShowRewardsTitle = "Show mig_reward";
 	Dictionary<string,string> mbrixVars = new Dictionary<string, string>();
     Dictionary<string, string> DefaultMbrixVars = new Dictionary<string, string>();
 
@@ -173,6 +173,16 @@ public class MainScene : MonoBehaviour , MediaBrixAdEvents
 		rewardsAdLoading = false;
 		viewsAdLoading = false;
 		print("OnStarted:" + status);
+	}
+	public void OnAdShown(string target){
+		print ("jason: onAdShown"+target);
+		if(target.Equals(ViewsIdentifier)){
+			viewsButtonLabel = target +" onAdShown";
+		}else if(target.Equals(FlexIdentifier)){
+			flexButtonLabel = target +" onAdShown";	
+		}else if(target.Equals(RewardsIdentifier)){
+			rewardsButtonLabel = target +" onAdShown";
+		}
 	}
 
 	public void OnAdReady(string target) {
