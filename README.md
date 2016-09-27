@@ -13,7 +13,7 @@ If you choose to add the SDK to your project's lib folder, add the following to 
 ```
 dependencies {
     compile 'com.android.support:support-v4:22.2.1' //This can be changed 
-                                                    //to whatever build number that is compatitable with your project
+                                                    //to whatever build number that is compatible with your project
     compile files('libs/mediabrix-sdk-FBless.jar')
 }
 ```
@@ -41,7 +41,7 @@ Add the following to your module-level build.gradle file:
 ```
 dependencies {
     compile 'com.android.support:support-v4:22.2.1' //This can be changed 
-                                                    //to whatever build number that is compatitable with your project
+                                                    //to whatever build number that is compatible with your project
     compile 'com.mediabrix.android:mediabrix-sdk-FBless:+@jar'
 }
 
