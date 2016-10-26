@@ -1,4 +1,5 @@
 # Mediabrix Android SDK
+## Please review the "Testing / Release Settings" section for new guidelines on testing and deploying your integration.
 
 ## Getting Started 
 
@@ -90,6 +91,20 @@ To initialize the MediaBrix SDK you will need to create an instance of the Media
    MediabrixAPI.getInstance().initialize(context, BASE_URL, APP_ID, this); 
    // 'this' refers to class that is implementing IAdEventsListener
 ```
+Your `APP_ID` will be provided to you during the MediaBrix onboarding process. Please see the next section for the appropriate `BASE_URL`.
+
+###Testing / Release Settings
+
+To facilitate integrations and QA around the globe, MediaBrix has deployed an open Base URL for all of our world wide network partners to use while testing the MediaBrix SDK. This Test Base URL will eliminate the need for proxying your device to the US and ensure your app receives 100% fill during testing.
+
+* **Test Base URL:** `https://test-mobile.mediabrix.com/v2/manifest/`
+
+* **Production Base URL:** `https://mobile.mediabrix.com/v2/manifest/`
+
+`https://test-mobile.mediabrix.com/v2/manifest/` should **ONLY** be used for testing purposes, as it will not deliver live campaigns to your app.
+
+It is important to ensure that after testing, the Release build of your app uses the Production Base URL. **If you release your app using the Test Base URL, your app will not receive payable MediaBrix ads.**
+
 
 ### The SDK Lifecycle 
 
