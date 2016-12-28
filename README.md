@@ -192,6 +192,7 @@ HashMap<String, String> vars = new HashMap<String, String>();
 MediabrixAPI.getInstance().load(context, target, vars); 
 //target represents the string of the zone you want to load
 ```
+Please note, if the `onStarted()` callback has not been returned, **the ad load will automatically fail**. Ensure that you have setup your SDK callback methods as shown above, and that you are calling load only after the `onStarted()` callback has been returned.
 
 ### Showing an Ad
 After receiving the `onAdReady()` callback, the SDK is ready to show the ad that you have loaded. To show an ad call the method below:
