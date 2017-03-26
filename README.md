@@ -72,6 +72,7 @@ Add the following elements within your project's Application tag:
 <activity
      android:name="com.mediabrix.android.service.AdViewActivity"
      android:configChanges="orientation|screenSize|keyboard"
+     android:hardwareAccelerated="true"
      android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
 </activity>
 <service
