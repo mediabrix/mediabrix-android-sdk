@@ -13,41 +13,11 @@ If you choose to add the SDK to your project's lib folder, add the following to 
 
 ```
 dependencies {
-    compile 'com.android.support:support-v4:22.2.1' //This can be changed 
-                                                    //to whatever build number that is compatible with your project
+    compile 'com.android.support:appcompat-v7:+'//At least 25.1.0 is required
+    compile 'com.google.android.gms:play-services-ads:9.6.1'//At least 9.6.1 is required
     compile files('libs/mediabrix-sdk-FBless.jar')
 }
 ```
-
-If you want to add the SDK via Gradle, you will need to pull from our Maven repo. To pull from our repo, you will need to create a [bintray account](https://bintray.com/). Once registered, inform MediaBrix with your bintray user name to gain access to the repo.
-
-
-Add the following to your root-level build.gradle file:
-```
-allprojects {
-    repositories {
-        jcenter()
-        maven {
-            url  "http://mediabrixengineering.bintray.com/maven"
-            credentials {
-                username 'your_bintray_username'
-                password 'your_api_key'
-            }
-        }
-    }
-}
-```
-
-Add the following to your module-level build.gradle file:
-```
-dependencies {
-    compile 'com.android.support:support-v4:22.2.1' //This can be changed 
-                                                    //to whatever build number that is compatible with your project
-    compile 'com.mediabrix.android:mediabrix-sdk-FBless:+@jar'
-}
-
-```
-
 ## Modifying AndroidManifest.xml
 
 Add the following permissions:
@@ -187,10 +157,7 @@ public void onAdClosed(String target) {
 ### Loading an Ad
 After receiving the `onStarted()` callback, the SDK is now ready to load ads. To load an ad call the method below:
 ```
-HashMap<String, String> vars = new HashMap<String, String>();
-//vars represent Publisher vars. Publisher vars are optional, you can pass null.
- 
-MediabrixAPI.getInstance().load(context, target, vars); 
+MediabrixAPI.getInstance().load(context, target); 
 //target represents the string of the zone you want to load
 ```
 Please note, if the `onStarted()` callback has not been returned, **the ad load will automatically fail**. Ensure that you have setup your SDK callback methods as shown above, and that you are calling load only after the `onStarted()` callback has been returned.
