@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements IAdEventsListener
         status = (TextView) findViewById(R.id.status);
         load = (Button) findViewById(R.id.load);
         String baseURL = "http://mobile.mediabrix.com/v2/manifest/";
-        String appID = "TwwvxoFnJn";
+        String appID = "JxxEkB3BpF";
         MediabrixAPI.setDebug(true);//This method is used enable/disables SDK logs. To turn off SDK logs setDebug to false. By default setDebug is set to true
         MediabrixAPI.getInstance().initialize(context, baseURL, appID, this);//'this' refers to class that is implementing IAdEventsListener interface
 
@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity implements IAdEventsListener
             @Override
             public void onClick(View v) {
                 if(!isLoaded){
-                    MediabrixAPI.getInstance().load(context, "Babel_Reward", null);
+                    MediabrixAPI.getInstance().load(context, "Rally_Standard_Video");
                 }else{
-                    MediabrixAPI.getInstance().show(context, "Babel_Reward");
+                    MediabrixAPI.getInstance().show(context, "Rally_Standard_Video");
                 }
             }
         });
