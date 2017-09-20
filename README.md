@@ -45,6 +45,12 @@ Add the following elements within your project's Application tag:
      android:hardwareAccelerated="true"
      android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
 </activity>
+<activity
+     android:name="com.mediabrix.android.service.ClickOutActivity"
+     android:configChanges="orientation|screenSize|keyboard"
+     android:hardwareAccelerated="true"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+</activity>
 <service
       android:name="com.mediabrix.android.service.MediaBrixService" >
 </service> 
