@@ -61,7 +61,7 @@ Add the following elements within your project's Application tag:
 The class in which you would like to display ads will need to implement the ``IAdEventsListener`` interface. The methods that the class will implement provides the Activity with information regarding the SDK's ad state. 
 
 
-###Initialization
+### Initialization
 
 To initialize the MediaBrix SDK you will need to create an instance of the MediaBrixAPI object in your Activity's `onCreate()` method:
 ```
@@ -70,7 +70,7 @@ To initialize the MediaBrix SDK you will need to create an instance of the Media
 ```
 Your `APP_ID` will be provided to you during the MediaBrix onboarding process. Please see the next section for the appropriate `BASE_URL`.
 
-###Testing / Release Settings
+### Testing / Release Settings
 
 To facilitate integrations and QA around the globe, MediaBrix has deployed an open Base URL for all of our world wide network partners to use while testing the MediaBrix SDK. This Test Base URL will eliminate the need for proxying your device to the US and ensure your app receives 100% fill during testing.
 
