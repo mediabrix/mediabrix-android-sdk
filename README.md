@@ -39,21 +39,18 @@ The following permissions are **optional**, but for increased revenue opportunit
 
 Add the following elements within your project's Application tag:
 ```
-<activity
-     android:name="com.mediabrix.android.service.AdViewActivity"
-     android:configChanges="orientation|screenSize|keyboard"
-     android:hardwareAccelerated="true"
-     android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-</activity>
-<activity
-     android:name="com.mediabrix.android.service.ClickOutActivity"
-     android:configChanges="orientation|screenSize|keyboard"
-     android:hardwareAccelerated="true"
-     android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-</activity>
-<service
-      android:name="com.mediabrix.android.service.MediaBrixService" >
-</service> 
+  <activity
+    android:name="com.mediabrix.android.core.AdViewActivity"
+    android:configChanges="orientation|screenSize|keyboard"
+    android:hardwareAccelerated="true"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+  </activity>
+  <activity
+    android:name="com.mediabrix.android.core.ClickOutActivity"
+    android:configChanges="orientation|screenSize|keyboard"
+    android:hardwareAccelerated="true"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+  </activity>
 ```
 
 ## Implementing the MediaBrix SDK

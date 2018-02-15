@@ -27,14 +27,17 @@
         </activity>
 
         <activity
-            android:name="com.mediabrix.android.service.AdViewActivity"
+            android:name="com.mediabrix.android.core.AdViewActivity"
             android:configChanges="orientation|screenSize|keyboard"
+            android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
         </activity>
-
-        <service
-            android:name="com.mediabrix.android.service.MediaBrixService" >
-        </service>
+        <activity
+            android:name="com.mediabrix.android.core.ClickOutActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
 
     </application>
 
