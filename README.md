@@ -101,17 +101,7 @@ protected void onPause() {
                                               // 'this' refers Activity's context       
     super.onPause();
 }
- 
-@Override
-public void onDestroy() { 
- 
-    /* Call onDestroy if this is the LAST or ONLY activity for loading/showing ads */
- 
-    MediabrixAPI.getInstance().onDestroy(this);
-    // 'this' refers Activity's context 
-    
-    super.onDestroy();
-}
+
 ```
 
 ### SDK Callback Methods
