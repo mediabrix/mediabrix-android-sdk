@@ -1,5 +1,5 @@
 # Mediabrix Android SDK
-## Please review the "Testing / Release Settings" section for new guidelines on testing and deploying your integration.
+## Please note, with the 1.8.2.003 update, our AndroidManifest.xml instructions have changed. Please review below for the updated additions to your AndroidManifest.xml file.
 
 ## Getting Started 
 
