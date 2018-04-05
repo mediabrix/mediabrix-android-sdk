@@ -13,7 +13,7 @@ If you choose to add the SDK to your project's lib folder, add the following to 
 
 ```
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'//At least 25.1.0 is required
+    compile 'com.android.support:appcompat-v4:+'//At least 25.1.0 is required
     compile 'com.google.android.gms:play-services-ads:9.6.1'//At least 9.6.1 is required
     compile files('libs/mediabrix-sdk-FBless.jar')
 }
