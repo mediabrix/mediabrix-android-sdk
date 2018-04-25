@@ -1,9 +1,9 @@
-# Mediabrix Android SDK
-## Please note, with the 1.8.2.003 update, our AndroidManifest.xml instructions have changed. Please review below for the updated additions to your AndroidManifest.xml file.
+# Android SDK
+## Please note, with the 1.8.2.004 update, our AndroidManifest.xml instructions have changed. Additionlly, the SDK now supports Android versions 5.0 (21) and up. Please review below for the updated additions to your AndroidManifest.xml file.
 
 ## Getting Started 
 
-Download the latest version of the MediaBrix SDK. MediaBrix currently supports Android versions 2.3 and up.
+Download the latest version of the MediaBrix SDK. MediaBrix currently supports Android versions 5.0 (21) and up.
 * mediabrix-sdk-FBless.jar
 
 ### Integrating the MediaBrix SDK into Android Studio
