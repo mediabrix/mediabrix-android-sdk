@@ -1,5 +1,5 @@
 # Android SDK
-## Please note, with the 1.8.2.004 update, our AndroidManifest.xml instructions have changed. Additionlly, the SDK now supports Android versions 5.0 (21) and up. Please review below for the updated additions to your AndroidManifest.xml file.
+## Please note, with the release of Android P (API 28), our AndroidManifest.xml instructions have changed. Please review below for the updated additions to your AndroidManifest.xml file.
 
 ## Getting Started 
 
@@ -52,7 +52,13 @@ Add the following elements within your project's Application tag:
     android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
   </activity>
 ```
-
+If your app is targeting API level 28 (Android 9.0) or above, you must include the following declaration within within your project's Application tag:
+```
+  <uses-library
+    android:name="org.apache.http.legacy"
+    android:required="false" />
+```
+    
 ## Implementing the MediaBrix SDK
  
 The class in which you would like to display ads will need to implement the ``IAdEventsListener`` interface. The methods that the class will implement provides the Activity with information regarding the SDK's ad state. 
