@@ -71,7 +71,7 @@ To initialize the MediaBrix SDK you will need to create an instance of the Media
    MediabrixAPI.getInstance().initialize(context, BASE_URL, APP_ID, this); 
    // 'this' refers to class that is implementing IAdEventsListener
 ```
-Your `APP_ID` will be provided to you during the MediaBrix onboarding process. Please see the next section for the appropriate `BASE_URL`.
+**Your `APP_ID` will be provided to you during the MediaBrix onboarding process. `BASE_URL` should be set to `http://mobile.mediabrix.com/v2/manifest/`.**
 
 ### Testing Outside of the US
 
